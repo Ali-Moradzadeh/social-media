@@ -28,9 +28,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+activate_app = lambda app_name: f"{app_name}.apps.{app_name.capitalize()}Config"
 
+# Application definition
 INSTALLED_APPS = [
+    activate_app('account'),
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,3 +124,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#login cinfigs
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
