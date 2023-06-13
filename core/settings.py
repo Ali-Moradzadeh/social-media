@@ -126,10 +126,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#login cinfigs
+#login Configurations
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
-#Email Configuration
+#Email Configurations
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
