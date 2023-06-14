@@ -8,7 +8,6 @@ local_settings.py
 db.sqlite3
 
 # Static files
-static/
 media/
 
 # Virtual environment
