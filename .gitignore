@@ -12,3 +12,7 @@ media/
 
 # Virtual environment
 env/
+
+#SSL
+cert.crt
+cert.key
