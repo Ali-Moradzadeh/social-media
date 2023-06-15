@@ -7,3 +7,4 @@ git+https://github.com/django-extensions/django-extensions.git@25a41d8a3ecb24c00
 werkzeug==2.2.2
 pyOpenSSL==22.0.0
 tzdata==2023.3
+django-debug-toolbar==3.6.0

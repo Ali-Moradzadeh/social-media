@@ -51,9 +51,11 @@ INSTALLED_APPS = [
     'social_django',
     'django_extensions',
     'easy_thumbnails',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -195,3 +197,8 @@ with open("/data/data/com.termux/files/home/sec/social-media/google_auth.json") 
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY =  google_auth_config['web']['client_id']  # Google Client ID
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = google_auth_config['web']['client_secret']  # Google Client Secret
+
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
