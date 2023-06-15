@@ -42,10 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     #internal apps
     activate_app('images'),
-    
+    activate_app('actions'),
+
     #third apps
     'social_django',
     'django_extensions',
