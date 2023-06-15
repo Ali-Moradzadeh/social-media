@@ -8,3 +8,4 @@ werkzeug==2.2.2
 pyOpenSSL==22.0.0
 tzdata==2023.3
 django-debug-toolbar==3.6.0
+redis==4.3.4

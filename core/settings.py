@@ -145,6 +145,12 @@ if DEBUG:
     mimetypes.add_type('text/css', '.css', True)
 
 
+#Redis Configurations
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
